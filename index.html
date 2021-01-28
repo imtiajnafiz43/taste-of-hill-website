@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="btn">
+        <button id="submit">Click Here To Show More>> </button>
+    </div>
+    <div id="cart" class="container">
+        <h1>OUR POPULAR MENU</h1>
+        <div class="list">
+            <img src="shutki.jpg" alt="">
+            <div class="wrapper">
+                <h3>Shutki & moricher achar</h3>
+                <p>Nutrition Facts</p>
+                <p>495 Cal</p>
+            </div>
+            <i id="icon1" class="fa fa-shopping-cart"></i>
+        </div>
+        <div class="list">
+            <img src="fruit-basket.jpg" alt="">
+            <div class="wrapper">
+                <h3>Fruit Basket</h3>
+                <p>Stylish collection</p>
+            </div>
+            <i id="icon2" class="fa fa-shopping-cart"></i>
+        </div>
+        <div class="list">
+            <img src="laddu.jpg" alt="">
+            <div class="wrapper">
+                <h3>Laddu</h3>
+                <p>Nutrition Facts</p>
+                <p>350 Cal</p>
+            </div>
+            <i id="icon3" class="fa fa-shopping-cart"></i>
+        </div>
+        <div class="list">
+            <img src="tea.jpg" alt="">
+            <div class="wrapper">
+                <h3>Green Tea</h3>
+                <p>Nutrition Facts</p>
+                <p>480 Cal</p>
+            </div>
+            <i id="icon4" class="fa fa-shopping-cart"></i>
+        </div>
+    </div>
+    <div id="bye">
+        <h2 id="hi">Thank You</h2>
+    </div>
+    <script>
+        const clickhandler = document.getElementById("submit").addEventListener('click', function () {
+            const areaShow = document.getElementById("btn").style.display = "none";
+            const newArea = document.getElementById("cart").style.display = "block";
+        })
+        const iconhandler = document.getElementById("icon1").addEventListener('click', function () {
+            const show = document.getElementById("cart").style.display = "none";
+            const newShow = document.getElementById("bye").style.display = "block";
+        })
+        const iconhandler2 = document.getElementById("icon2").addEventListener('click', function () {
+            const show2 = document.getElementById("cart").style.display = "none";
+            const newShow2 = document.getElementById("bye").style.display = "block";
+        })
+        const iconhandler3 = document.getElementById("icon3").addEventListener('click', function () {
+            const show3 = document.getElementById("cart").style.display = "none";
+            const newShow3 = document.getElementById("bye").style.display = "block";
+        })
+        const iconhandler4 = document.getElementById("icon4").addEventListener('click', function () {
+            const show4 = document.getElementById("cart").style.display = "none";
+            const newShow4 = document.getElementById("bye").style.display = "block";
+        })
+    </script>
+</body>
+
+</html>

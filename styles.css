@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+  }
+  body {
+    background-image: url("taste.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: Center;
+    color: #fff;
+    
+  }
+  .container {
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+    padding: 2em 0px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+  }
+  .container h1 {
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-size: 2em;
+  }
+  .container .list {
+    position: relative;
+    background: rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .container .list img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+  }
+  
+  .container .list i {
+    position: absolute;
+    right: 0;
+    padding: 0 5rem;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    padding: 0px 20px;
+    background: #f90c;
+    background-size: 100px 100px;
+    font-size: 1.3em;
+    opacity: 0.5;
+    transition: 0.2s;
+    overflow: hidden;
+  }
+  .container .list:hover > i {
+    opacity: 1;
+  }
+  .container .list .wrapper {
+    padding-left: 10px;
+  }
+  .container .list .wrapper h3 {
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    font-size: 1.2em;
+  }
+  .container .list .wrapper p {
+    padding: 5px;
+    margin-left: 9px;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    font-size: 0.7em;
+    color: #c6c6c6;
+  }
+  #cart{
+      display: none;
+  }
+  #bye{
+      display: none;
+  }
+  button{
+    background-color: rgba(4, 19, 53, 0.945);
+    color: white;
+    background-repeat:no-repeat;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    cursor:pointer;
+    overflow: hidden;
+    padding: 25px;
+    font-weight: 700;
+  }
+  h2{
+      font-weight: 700;
+      font-size: 75px;
+      color: rgb(34, 1, 1);
+      position: relative;
+      top: -270px;
+    
+  }
